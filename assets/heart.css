@@ -1,0 +1,115 @@
+html, body {
+    height:100%;
+}
+
+body {
+  background: #98798347;
+  background-image: url("bg-blkr.png");
+  background-position: center;
+  background-size: auto 105%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+h1 {
+  margin-top: 200px;
+  font-family: Raleway, dcrweb,verdana,sans-serif!important;
+  color: white;
+  text-shadow: 2px 1px 2px white;
+  letter-spacing: 0.5em;
+  font-size: 3.3em;
+}
+
+h2 {
+  margin-top: -15px;
+  font-size: 1.3em;
+  font-family: dcrweb,verdana,sans-serif!important;
+  color: white;
+  text-shadow: 1px 1px 8px white;
+}
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -33;
+  opacity: 0.4;
+}
+
+#mainwrapper {
+  overflow-y: hidden;
+  text-align: center;
+}
+
+#centerMe {
+  box-shadow: -2px -4px 6px white;
+  margin: 0px auto;
+  opacity: 0.9;
+}
+
+#button {
+  color: #2ED6A1;
+}
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+  position: fixed;
+  bottom: 0px;
+  right: 150px;
+}
+
+.demo-card-square > .mdl-card__title {
+  color: grey;
+  background: url('img/decred-logo.png') bottom no-repeat #efefef;
+}
+
+#titles {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1190px) {
+  body {
+    background-image: url("bg-dis-blkr.png");
+    background-size: 150% 105%;
+  }
+}
+
+@media only screen and (max-width: 791px) {
+  body {
+    background-image: url("bg-dis-blkr.png");
+    background-size: 100% 105%;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  h1 {
+    font-size: 2.1em;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #mainwrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  #titles h2 {
+    margin-top: 30px;
+  }
+
+  #mainwrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  body {
+    background-size: 100% 105%;
+  }
+}
