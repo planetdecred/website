@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap');
+
+:root{
+    --gray: #1C1C1C;
+    --white: #F9FAFA;
+    --green: #2ed6a1;
+    --source-sans: 'Source Sans Pro', sans-serif;
+    --title-size: 62px;
+    --text-size: 22px;
+  } 
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: var(--source-sans);
+    background: var(--gray);
+  }
+
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  a{
+    text-decoration: none;
+    color: var(--green);
+  }
+
+  
+  /*------------------------------------------------------------------------Navbar*/
+
+  .nav {
+    height: 70px;
+    width: 100%;
+    background-color:var(--gray);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center ;
+    align-items: center;
+  }
+
+  .nav-links{
+    display: flex;
+  }
+  
+.nav-image{
+    display: grid;
+    height: 50px;
+    text-align: center;
+  }
+  
+.nav-btn {
+    display: none;
+  }
+
+#nav-check {
+    display: none;
+  }
+
+  .nav-links a {
+	  overflow: hidden;
+	  padding: 0 4px;
+    height: var(--text-size);
+    color: rgb(133, 133, 133);
+    font-weight: 500;
+    margin: 0px 25px;
+  }
+
+  .nav-image img{
+    width: 50px;
+  }
+
+  /*-------------------------------------------------------------------------------------Main*/
+
+.bg{
+  padding-top: 70px;
+  min-height: 750px;
+  background-image: url(../assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: -150px;
+}
+
+.main-text-wrapper{
+  width: 100%;
+  text-align: center;
+}
+
+.main-text-wrapper h3{
+  font-size: var(--title-size);
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.main-text-wrapper p{
+  margin-top: 0px;
+  font-size: var(--text-size);
+  color: var(--white);
+  font-weight: 300;
+}
+
+
+
+/*--------------------------------------------------------------------About*/
+.about{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  min-height: 600px;
+  text-align: initial;
+}
+
+.about h3{
+  font-size: var(--title-size);
+  color: var(--white);
+  font-weight: 400;
+  margin: 0;
+}
+
+
+.about p{
+  font-size: var(--text-size);
+  color: var(--white);
+  font-weight: 200;
+}
+
+/*----------------------------------------------------------------------------Downloads*/
+  .downloads{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+    color: var(--white);
+  }
+
+  .downloads-wrapper{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--gray);
+    padding: 50px 25px;
+    border-radius: 5px;
+    font-size: 22px;
+  }
+  
+  .wrapper-icons-mobile{
+    display: flex;
+    padding-top: 20px;
+  }
+.wrapper-icons-mobile img{
+    width: 150px;
+    cursor: pointer;
+    margin: 15px;
+  }
+
+  /*Footer*/
+  footer{
+    background: var(--bg);
+    color: var(--green);
+    height: 10vh;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  footer p{
+    margin: 0;
+    padding: 0;
+  }
+
+ /*----------------------------------------------------------------------Chat*/
+
+ .chat{
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+
+.instrucctions-wrapper{
+  background: var(--gray);
+  min-height: 650px;
+  padding: 50px;
+  padding-top: 80px;
+  color: var(--white);
+  font-weight: 200;
+}
+
+.riot-info-wrapper{
+  background: url(../assets/bg.jpg);
+  background-size: cover;
+  min-height: 700px;
+  padding: 70px;
+  color: var(--white);
+  font-weight: 200;
+}
+
+.info-tittle-wrapper{
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+}
+.image-info-wrapper{
+  display: grid;
+  align-items: center;
+}
+
+.text-info-wrapper{
+    display: grid;
+    align-items: center;
+}
+
+.text-info-wrapper h1,  .text-info-wrapper p{
+  margin: 0;
+}
+
+.riot-apps-wrapper{
+  padding-top: 80px;
+  display: grid;
+  justify-content: center;
+}
+
+.riot-apps-wrapper img{
+  height: 45px;
+  width: 160px;
+  margin: 10px;
+}
+
+
+
+.footer-links-wrapper a{
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+  margin: 0px 20px;
+}
+
+@media (max-width: 768px){
+  .chat{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+  .instrucctions-wrapper{
+      min-height: 400px;
+      font-size: 15px;
+      padding-top: 50px;
+      padding-left: 5px;
+      text-align: left;
+}
+
+.info-tittle-wrapper{
+  grid-template-columns: 1fr;
+}
+
+.text-info-wrapper h1,  .text-info-wrapper p{
+  margin: 5px;
+}
+
+.riot-apps-wrapper{
+  padding-top: 10px;
+}
+
+.footer-links-wrapper{
+    text-align: center;
+}
+
+}
+
+/*-----------------------------------------------------------------------Responsive*/
+  
+  @media (max-width:992px) {
+
+    .main h3{
+      font-size: 36px;
+    }
+    .main p{
+      font-size: 18px;
+    }
+
+    .nav > .nav-btn {
+      display: grid;
+      position: absolute;
+      justify-self: right;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid var(--green);
+    }
+
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: var(--gray);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 70px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      height: 60px;
+    }
+
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+
+    /*About*/
+    .about h3{
+      font-size: 36px;
+    }
+    .about p{
+      font-size: 12px;
+  }
+
+}
+
+  @media (max-width: 768px){
+    .container{
+      max-width: 720px;
+    }
+  
+    .wrapper-icons-mobile{
+      display: block;
+    }
+
+    .downloads, .about{
+      padding-top: 30px;
+      align-items: initial;
+    }
+
+  }
+  
+  @media (max-width: 576px){
+    .container{
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 576px){
+    .container{
+      max-width: 100%;
+    }
+}
