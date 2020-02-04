@@ -1,4 +1,4 @@
-baseurl = "https://planetdecred.org/"
+baseurl = "https://rickmort.github.io/website/"
 title = "Planet Decred"
 
 theme = "planetdecred-theme"
