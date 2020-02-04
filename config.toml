@@ -7,7 +7,6 @@ languagecode = "en"
 defaultcontentlanguage = "en"
 
 
-publishDir = "docs"
 
 
 [params]
