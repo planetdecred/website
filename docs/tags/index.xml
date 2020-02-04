@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Planet Decred</title>
-    <link>https://planetdecred.org/tags/</link>
+    <link>https://rickmort.github.io/website/tags/</link>
     <description>Recent content in Tags on Planet Decred</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://planetdecred.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rickmort.github.io/website/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

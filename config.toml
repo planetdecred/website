@@ -6,7 +6,9 @@ theme = "planetdecred-theme"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
+
 publishDir = "docs"
+
 
 [params]
     main = "Planet Decred"
