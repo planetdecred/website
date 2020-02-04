@@ -1,4 +1,4 @@
-baseurl = "https://rickmort.github.io/website/"
+baseurl = "https://planetdecred.org/"
 title = "Planet Decred"
 
 theme = "planetdecred-theme"
@@ -12,8 +12,8 @@ publishDir = "docs"
 
 [params]
     main = "Planet Decred"
-    description = "John Doe's personal website"
-    keywords = "blog,developer,personal"
+    description = "Planet Decred Website"
+    keywords = "developer,opensource"
     info = "Planet Decred is a gathering placer for a diverse community ecosystem."
     footercontent = ""
 
