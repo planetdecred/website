@@ -1,4 +1,4 @@
-baseurl = "https://planetdecred.org/"
+baseurl = "https://cocky-hopper-a03889.netlify.com"
 title = "Planet Decred"
 
 theme = "planetdecred-theme"
