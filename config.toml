@@ -1,0 +1,31 @@
+baseurl = "https://planetdecred.org/"
+title = "Planet Decred"
+
+theme = "planetdecred-theme"
+
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+[params]
+    main = "Planet Decred"
+    description = "John Doe's personal website"
+    keywords = "blog,developer,personal"
+    info = "Planet Decred is a gathering placer for a diverse community ecosystem."
+    footercontent = ""
+
+    dateformat = "January 2, 2006"
+
+    hideCredits = true
+    hideCopyright = true
+    since = 2019
+
+    rtl = false
+
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
