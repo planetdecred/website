@@ -108,11 +108,9 @@
   .main {
     text-align: center;
     h1 {
-      font-family: 'Roboto', sans-serif;
       font-weight: 700;
-      text-transform:uppercase;
       color: transparent;
-        background: linear-gradient(to left, #2576F4, #3298DA, #36B9BC, #39D8AA, #2576F4);
+      background: linear-gradient(to left, #2576F4, #3298DA, #36B9BC, #39D8AA, #2576F4);
       background-size: 1000px 100%;
       animation: bg 40s linear infinite;
       background-clip: text;
@@ -228,4 +226,10 @@
 .chat{
   padding-top: 5rem;
   margin-bottom: 10rem;
+}
+
+.about{
+  height: 30rem;
+  width: 100%;
+  background-color: red;
 }
