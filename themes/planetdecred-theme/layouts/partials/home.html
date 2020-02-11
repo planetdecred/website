@@ -1,8 +1,55 @@
-<section class="bg-main centered" style="width: 100%; background-image: url(images/bg.jpg/); background-size: cover;">
+<section class="centered" style="width: 100%; height: 100vh; background-image:; background-size: cover;">
   <div class="container">
     <div class="about">
       <h1>{{ .Site.Params.main }}</h1>
       <h2>{{ .Site.Params.info }}</h2>
+      <h5>{{ .Site.Params.about }}</h5>
+    </div>
+  </div>
+</section>
+<hr>
+<section id="downloads" class="centered downloads">
+  <div class="container">
+    <div class="downloads-container">
+      <div class="title-downloads">
+        <h2>Downloads</h2>
+      </div>
+      <div class="card">
+        <div class="download-title-wrapper">
+          <img src="{{ "images/symbol-dcr-white.png" | absURL }}" alt="logo-decred">
+          <h5>Wallet Decred for Mobile</h5>
+        </div>
+        <div class="download-links-wrapper">
+          <a href="https://raedahgroup.com/" target="_blank"><img src="{{ "images/google-store-icon.png" | absURL }}" alt="AndroidApp"></a>
+          <a href="https://apps.apple.com/us/app/decred-wallet/id1462247643" target="_blank"><img src="{{ "images/apple-store-icon.png" | absURL }}" alt="iOSAPP"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section id="chat" class="centered chat">
+  <div class="container">
+      <div class="chat" >
+        <div class="header-card">
+            <h2>
+              {{ .Site.Params.chatTitle }}
+            </h2>
+        </div>
+        <div class="body-card">
+            <h4>
+              Web interface and Sign Up
+            </h4>
+            <p>
+              Use <a href="https://chat.planetdecred.org/" target="_blank">chat.planetdecred.org</a>. For development, please use the same name you use on github.
+            </p>
+            <h4>
+              Mobile apps              
+            </h4>
+            <p>
+              <a href="https://play.google.com/store/apps/details?id=im.vector.riotx" target="_blank">Android</a> and <a href="https://apps.apple.com/us/app/vector-im/id1083446067" target="_blank">iOS</a> can be configured with the <a href="https://matrix.planetdecred.org/_matrix/static/" target="_blank">matrix.planetdecred.org</a> home server.
+            </p>
+        </div>
     </div>
   </div>
 </section>

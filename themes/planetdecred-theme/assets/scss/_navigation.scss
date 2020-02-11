@@ -2,18 +2,22 @@
   height: 6.0rem;
   width: 100%;
   background-color: $gray-color;
+  position: fixed;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  z-index: 10000;
   a, span {
     display: inline;
     font-size: 1.6rem;
     font-family: $heading-font-family;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 6.0rem;
-    color: rgb(139, 139, 139);
+    color: $text-color;
   }
   a {
     &:hover,
     &:focus {
-      color: $link-color;
+      color: $complement-color;
       text-decoration: none;
     }
   }
@@ -40,14 +44,14 @@
       visibility: hidden;
       opacity: 0;
       padding: 0;
-      max-height: 0;
-      width: 100%;
-      background-color: $bg-color;
-      border-bottom: solid 1px rgb(75, 75, 75);
-      transition: opacity 0.25s, max-height 0.15s linear;
+      height: 100vh;
+      width: 50%;
+      background-color: $secundary-color;
+      border-bottom: solid 1px rgb(255, 255, 255);
+      transition: opacity 0.250s;
     }
     .navigation-item {
-      float: left;
+      float: right;
       margin: 0;
       position: relative;
       @media only screen and (max-width : 768px) {

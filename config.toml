@@ -10,11 +10,16 @@ defaultcontentlanguage = "en"
 
 
 [params]
-    main = "Planet Decred"
-    description = "Planet Decred Website"
-    keywords = "developer,opensource"
-    info = "Planet Decred is a gathering placer for a diverse community ecosystem."
+
+    keywords = "developer,opensource"    
     footercontent = ""
+    description = "Planet Decred Website"
+
+    main = "Planet Decred"
+    info = "is the gathering place for a diverse community ecosystem."
+    about =  "An open source project, community run. Working to build decentralized project infrastructure for the decred blockchain."
+
+    chatTitle = "Join to The Planet Decred Server Chat"
 
     dateformat = "January 2, 2006"
 
@@ -23,7 +28,6 @@ defaultcontentlanguage = "en"
     since = 2019
 
     rtl = false
-
 
 [menu]
   [[menu.main]]

@@ -1,7 +1,13 @@
 *,
 *:after,
 *:before {
-	box-sizing: inherit;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: $text-color;
+  background: $complement-color;
 }
 
 html {
@@ -15,11 +21,16 @@ body {
 	font-family: $text-font-family;
 	font-size: 1.6em;
 	font-weight: 300;
-  line-height: 1.8em;
   @media only screen and (max-width : 768px) {
     font-size: 1.6em;
-    line-height: 1.6em;
   }
+}
+
+hr{
+  background: $secundary-color;
+  border-style: none;
+  height: 2px;
+  width: 350px;
 }
 
 a {
@@ -32,72 +43,68 @@ a {
   }
 }
 
-p {
-  margin: 0;
-
-  color: $alt-bg-color;
-}
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   font-family: $text-font-family;
-  font-weight: 700;
-  color: $alt-fg-color;
-  margin: 0;
+  color: $text-color;
+  margin: 5px 0px;
+  line-height: 3.6rem;
 }
 
+p {
+  font-size: 2rem;
+  color: $alt-bg-color;
+  font-weight: 200;
+}
+
+
 h1 {
-  font-size: 6.5rem;
-  line-height: 3.6rem;
+  font-size: 4.8rem;
   @media only screen and (max-width : 768px) {
     font-size: 4.0rem;
-    line-height: 3.4rem;
   }
 }
+
 h2 {
-  font-size: 2.8rem;
-  line-height: 3.2rem;
-  font-weight: 200;
+  font-size: 4rem;
   padding-top: 20px;
   @media only screen and (max-width : 768px) {
     font-size: 2.6rem;
-    line-height: 3.0rem;
   }
 }
 h3 {
-  font-size: 2.4rem;
-  line-height: 2.8rem;
+  margin-top: 3.5px;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+
+
   @media only screen and (max-width : 768px) {
     font-size: 2.2rem;
-    line-height: 2.6rem;
   }
 }
 h4 {
   font-size: 2.2rem;
-  line-height: 2.6rem;
   @media only screen and (max-width : 768px) {
     font-size: 2.0rem;
-    line-height: 2.4rem;
   }
 }
 h5 {
+  font-weight: 300;
   font-size: 2.0rem;
-  line-height: 2.4rem;
   @media only screen and (max-width : 768px) {
     font-size: 1.8rem;
-    line-height: 2.2rem;
   }
 }
 h6 {
   font-size: 1.8rem;
-  line-height: 2.2rem;
   @media only screen and (max-width : 768px) {
     font-size: 1.6rem;
-    line-height: 2.0rem;
   }
 }
 
@@ -117,7 +124,6 @@ pre {
   font-family: $text-font-family;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 2.6rem;
   overflow-x: auto;
   margin: 0;
   code {
@@ -132,13 +138,12 @@ code {
   font-size: 1.6rem;
   font-weight: 400;
   background-color: $alt-bg-color;
-  color: $fg-color;
+  color: $text-color;
 }
 
 blockquote {
   border-left: 2px solid $alt-bg-color;
   padding-left: 2.0rem;
-  line-height: 2.2rem;
   font-weight: 400;
   font-style: italic;
 }
@@ -182,8 +187,8 @@ img {
 .container {
   margin: 0 auto;
   max-width: 80%;
-  padding-left: 2.0rem;
-  padding-right: 2.0rem;
+  padding-left: 1.0rem;
+  padding-right: 1.0rem;
 }
 
 .fab {
@@ -208,4 +213,50 @@ img {
 
 .fas {
   font-weight: 900;
+}
+
+
+img,
+p,
+a,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5{
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode:    both;
+  animation-fill-mode:            both;
+  -webkit-animation-name: fadeInDown;
+  animation-name:         fadeInDown;
+}
+
+
+
+@-webkit-keyframes fadeInDown {
+  from {
+      opacity: 0;
+      -webkit-transform:  translateY(-20px);
+      transform:          translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      -webkit-transform:  translateY(0);
+      transform:          translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      -webkit-transform:  translateY(-20px);
+      transform:          translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      -webkit-transform:  translateY(0);
+      transform:          translateY(0);
+  }
 }
