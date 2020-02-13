@@ -109,26 +109,10 @@
     text-align: center;
     h1 {
       font-weight: 700;
-      color: transparent;
-      background: linear-gradient(to left, #2576F4, #3298DA, #36B9BC, #39D8AA, #2576F4);
-      background-size: 1000px 100%;
-      animation: bg 40s linear infinite;
-      background-clip: text;
-      -webkit-background-clip: text;
-      @keyframes bg {
-        0% {
-          background-position-x: 0;
-        }
-        100% {
-          background-position-x: 10000px;
-        }
-      }
+      color: $text-color;
     }
     h2 {
-
-    }
-    h3 {
-
+      font-weight: 300;
     }
     ul {
       list-style: none;
@@ -156,7 +140,7 @@
         }
       }
     }
-    }
+  }
 
   .chat{
     text-align: center;
@@ -183,55 +167,38 @@
   }
 }
 
-.downloads{
-  padding-top: 80px;
-  margin-bottom: 150px;
+.about{
+  height: 30rem;
+  width: 100%;
+  text-align: center;
+    h3 {
+     font-weight: 300;
+    }
 }
 
-.card{
-  margin-top: 5rem;
-  height: 300px;
-  width: 100%;
-  .download-title-wrapper{
-    height: 50px;
-    border: 1px solid $complement-color;
-    border-radius: 10px 10px 0 0;
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    text-align: center;
-    align-items: center;
-    padding-right: 10px;
-    img{
-      width: 40px;
-    }
-    h5{
-      font-size: 2rem;
-    }
-  }
-  .download-links-wrapper{
-    display: grid;
-    justify-items: center;
-    align-content: center;
-    height: 250px;
-    border: 1px solid $complement-color;
-    border-radius: 0 0 10px 10px;
-    img{
-      display: block;
-      width: 150px;
-      margin: 2rem;
-    }
+
+.downloads-container{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  img{
+    margin-top: 20px;
+    width: 250px;
+    display: block;
   }
 }
 
 .chat{
   padding-top: 5rem;
   margin-bottom: 10rem;
-}
-
-.about{
-  height: 30rem;
-  width: 100%;
-  background-color: $gray-color;
-  border-radius: 0 100px 0 100px ;
-  border-bottom: 3px solid $complement-color;
+  text-align: center;
+  .chat-info-container{
+    margin-top: 20px;
+  }
+  p, h3{
+    margin: 10px 0px;
+  }
+  h3{
+    font-weight: 300;
+  }
 }
