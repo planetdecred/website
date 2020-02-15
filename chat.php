@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from rickmort.github.io/planetdecred-website/chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Feb 2020 13:58:35 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
     <meta charset="UTF-8">
@@ -34,7 +32,5 @@
         </div>
     </section>
 </body>
-
-<!-- Mirrored from rickmort.github.io/planetdecred-website/chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Feb 2020 13:58:35 GMT -->
 
 </html>
