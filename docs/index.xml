@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Planet Decred</title>
+    <link>https://planetdecred.org/</link>
+    <description>Recent content on Planet Decred</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://planetdecred.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Planet Decred</title>
+      <link>https://planetdecred.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://planetdecred.org/about/</guid>
+      <description>About Planet Decred Planet Decred is an open source project, onboarding new users and developers.</description>
+    </item>
+    
+    <item>
+      <title>Downloads</title>
+      <link>https://planetdecred.org/downloads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://planetdecred.org/downloads/</guid>
+      <description>Decred Wallet for Mobile</description>
+    </item>
+    
+    <item>
+      <title>Join our Planet Decred Server</title>
+      <link>https://planetdecred.org/chat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://planetdecred.org/chat/</guid>
+      <description>Web interface and Sign Up Use chat.planetdecred.org. For development, please use the same name you use on github.
+Mobile apps Android and iOS can be configured with the matrix.planetdecred.org home server.</description>
+    </item>
+    
+  </channel>
+</rss>

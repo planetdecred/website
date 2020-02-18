@@ -1,0 +1,49 @@
+<section class="main centered" style="width: 100%; height: 100vh; background-image: url(images/bg.jpg); background-size: cover;">
+  <div class="container">
+    <div class="main">
+      <h1>{{ .Site.Params.main }}</h1>
+      <h2>{{ .Site.Params.info }}</h2>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="centered about" style="width: 100%; height: 80vh;">
+  <div class="container">
+    <h2>About</h2>
+    <h3>{{ .Site.Params.about }}</h3>
+  </div>
+</section>
+
+<hr>
+
+<section id="downloads" class="centered downloads" style="width: 100%; height: 80vh;">
+  <div class="container">
+    <div class="downloads-container">
+        <h2 >Decred Wallet For Mobile</h2>
+        <a href="https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet" target="_blank"><img src="{{ "images/google-store-icon.png" | absURL }}" alt="AndroidApp"></a>
+        <a href="https://apps.apple.com/us/app/decred-wallet/id1462247643" target="_blank"><img src="{{ "images/apple-store-icon.png" | absURL }}" alt="iOSAPP"></a>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section id="chat" class="centered chat" style="width: 100%; height: 100vh;">
+  <div class="container">
+    <h2>{{ .Site.Params.chatTitle }}</h2>
+      <div class="chat-info-container">
+        <h3 style="font-weight: 600;">
+          Web interface and Sign Up:
+        </h3>
+        <h3>
+          Use <a href="https://chat.planetdecred.org/" target="_blank">chat.planetdecred.org</a>. For development, please use the same name you use on github.
+        </p>
+        <h3 style="font-weight: 600;">
+          Mobile apps:          
+        </h3>
+        <h3>
+          <a href="https://play.google.com/store/apps/details?id=im.vector.riotx" target="_blank">Android chat</a> and <a href="https://apps.apple.com/us/app/vector-im/id1083446067" target="_blank">iOS chat</a> can be configured with the <strong>matrix.planetdecred.org</strong> </a> home server.
+        </h3>
+      </div>
+  </div>
+</section>

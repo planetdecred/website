@@ -1,0 +1,262 @@
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: $text-color;
+  background: $complement-color;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+  color: $alt-bg-color;
+  background-color: $bg-color;
+	font-family: $text-font-family;
+	font-size: 1.6em;
+	font-weight: 300;
+  @media only screen and (max-width : 768px) {
+    font-size: 1.6em;
+  }
+}
+
+hr{
+  background: $secundary-color;
+  border-style: none;
+  height: 2px;
+  width: 350px;
+}
+
+a {
+  font-weight: 300;
+  color: $link-color;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: $text-font-family;
+  color: $text-color;
+  margin: 5px 0px;
+  line-height: 3.6rem;
+}
+
+p {
+  font-size: 2rem;
+  color: $alt-bg-color;
+  font-weight: 200;
+}
+
+
+h1 {
+  font-size: 7rem;
+  @media only screen and (max-width : 768px) {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 4.3rem;
+  padding-top: 20px;
+  @media only screen and (max-width : 768px) {
+    font-size: 3rem;
+  }
+}
+h3 {
+  margin-top: 4px;
+  margin-bottom: 3rem;
+  font-size: 2.6rem;
+
+
+  @media only screen and (max-width : 768px) {
+    font-size: 2.2rem;
+  }
+}
+h4 {
+  font-size: 3rem;
+  @media only screen and (max-width : 768px) {
+    font-size: 2.0rem;
+  }
+}
+h5 {
+  font-weight: 300;
+  font-size: 2.8;
+  @media only screen and (max-width : 768px) {
+    font-size: 1.8rem;
+  }
+}
+h6 {
+  font-size: 2rem;
+  @media only screen and (max-width : 768px) {
+    font-size: 1.6rem;
+  }
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+.highlight > div,
+.highlight > pre {
+  margin: 0 0 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+pre {
+  display: block;
+  font-family: $text-font-family;
+  font-size: 1.6rem;
+  font-weight: 400;
+  overflow-x: auto;
+  margin: 0;
+  code {
+    display: inline-block;
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+code {
+  font-family: $text-font-family;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: $alt-bg-color;
+  color: $text-color;
+}
+
+blockquote {
+  border-left: 2px solid $alt-bg-color;
+  padding-left: 2.0rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+th, td {
+  padding: 1.6rem;
+}
+table {
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 2px solid $alt-fg-color;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding-left: 1.0rem;
+  padding-right: 1.0rem;
+}
+
+.fab {
+  font-weight: 400;
+}
+
+.fas {
+  font-weight: 700;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.fab {
+  font-weight: 400;
+}
+
+.fas {
+  font-weight: 900;
+}
+
+
+img,
+p,
+a,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5{
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode:    both;
+  animation-fill-mode:            both;
+  -webkit-animation-name: fadeInDown;
+  animation-name:         fadeInDown;
+}
+
+
+
+@-webkit-keyframes fadeInDown {
+  from {
+      opacity: 0;
+      -webkit-transform:  translateY(-20px);
+      transform:          translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      -webkit-transform:  translateY(0);
+      transform:          translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      -webkit-transform:  translateY(-20px);
+      transform:          translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      -webkit-transform:  translateY(0);
+      transform:          translateY(0);
+  }
+}
