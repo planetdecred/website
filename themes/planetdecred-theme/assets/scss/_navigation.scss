@@ -14,12 +14,15 @@
     line-height: 6.0rem;
     color: $text-color;
   }
-  a {
-    &:hover,
-    &:focus {
+ a {
+    &:hover{
       color: $complement-color;
       text-decoration: none;
     }
+    &:focus {
+      text-decoration: none;
+    }
+  }
   }
   .navigation-title {
     letter-spacing: 0.1rem;
