@@ -14,10 +14,12 @@
     line-height: 6.0rem;
     color: $text-color;
   }
-  a {
-    &:hover,
-    &:focus {
+ a {
+    &:hover{
       color: $complement-color;
+      text-decoration: none;
+    }
+    &:focus {
       text-decoration: none;
     }
   }
