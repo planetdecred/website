@@ -107,6 +107,7 @@
   justify-content: center;
   .main {
     text-align: center;
+    width: 100%; 
     h1 {
       font-weight: 700;
       color: $text-color;
@@ -167,10 +168,17 @@
   }
 }
 
+.home{
+  height: 100vh; 
+  background-image: url(../images/bg.jpg); 
+  background-size: cover;
+}
+
 .about{
-  height: 30rem;
   width: 100%;
   text-align: center;
+  width: 100%; 
+  height: 100vh;
   h2{
     border-bottom: 1px solid $complement-color;
     padding-bottom: 15px;
@@ -181,29 +189,31 @@
     text-align: justify;
   }
 }
-
-
-.downloads-container{
-  display: grid;
-  align-items: center;
-  justify-items: center;
-
-  h2{
-    border-bottom: 1px solid $complement-color;
-    padding-bottom: 15px;
-    margin-bottom: 35px;
-  }
-  img{
-    margin: 20px;
-    width: 250px;
-    display: block;
+.downloads{
+  width: 100%;
+  height: 100vh;
+  .downloads-container{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  
+    h2{
+      border-bottom: 1px solid $complement-color;
+      padding-bottom: 15px;
+      margin-bottom: 35px;
+    }
+    img{
+      margin: 20px;
+      width: 250px;
+      display: block;
+    }
   }
 }
 
 .chat{
-  padding-top: 5rem;
-  margin-bottom: 10rem;
   text-align: center;
+  width: 100%;
+  height: 100vh;
   h2{
     border-bottom: 1px solid $complement-color;
     padding-bottom: 15px;
