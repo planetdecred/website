@@ -10,6 +10,7 @@
       {{ with .Site.Menus.main}}
         {{ range sort . }}
           <li class="navigation-item">
+            <a class="active" href="#home"></a>
             <a href='{{ "#about" | relLangURL }}'>About</a>
             <a href='{{ "#downloads" | relLangURL }}'>Downloads</a>
             <a href='{{ "#chat" | relLangURL }}'>Chat</a>

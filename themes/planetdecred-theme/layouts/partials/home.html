@@ -1,4 +1,4 @@
-<section class="main centered" style="width: 100%; height: 100vh; background-image: url(images/bg.jpg); background-size: cover;">
+<section id="home" class="main home centered section">
   <div class="container">
     <div class="main">
       <h1>{{ .Site.Params.main }}</h1>
@@ -7,7 +7,7 @@
   </div>
 </section>
 
-<section id="about" class="centered about" style="width: 100%; height: 80vh;">
+<section id="about" class="centered about section">
   <div class="container">
     <h2>About</h2>
     <h3>{{ .Site.Params.about }} To learn more about Decred, visit the <a href="https://docs.decred.org/" target="_blank">documentation</a>. For developers, see the <a href="https://devdocs.decred.org/" target="_target">dev docs.</h3>
@@ -16,7 +16,8 @@
 
 <hr>
 
-<section id="downloads" class="centered downloads" style="width: 100%; height: 80vh;">
+
+<section id="downloads" class="centered downloads section">
   <div class="container">
     <div class="downloads-container">
         <h2 >Decred Wallet For Mobile</h2>
@@ -25,10 +26,9 @@
     </div>
   </div>
 </section>
-
 <hr>
 
-<section id="chat" class="centered chat" style="width: 100%; height: 100vh;">
+<section id="chat" class="centered chat section">
   <div class="container">
     <h2>{{ .Site.Params.chatTitle }}</h2>
       <div class="chat-info-container">

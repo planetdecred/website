@@ -20,7 +20,8 @@ body {
   background-color: $bg-color;
 	font-family: $text-font-family;
 	font-size: 1.6em;
-	font-weight: 300;
+  font-weight: 300;
+  margin: 0;
   @media only screen and (max-width : 768px) {
     font-size: 1.6em;
   }

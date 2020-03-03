@@ -56,6 +56,13 @@
       float: right;
       margin: 0;
       position: relative;
+      .active {
+        color: #2DD8A3;
+      }
+      
+      .none{
+        color: $text-color ;
+      }
       @media only screen and (max-width : 768px) {
         float: none !important;
         text-align: center;
