@@ -17,7 +17,7 @@ defaultcontentlanguage = "en"
 
     main = "Planet Decred"
     info = "a community ecosystem of builders for the Decred blockchain."
-    about =  "A community managed open source project building infrastructure for the Decred blockchain."
+    about =  "A community-managed open source project building infrastructure for the Decred blockchain."
 
     chatTitle = "Chat"
 
