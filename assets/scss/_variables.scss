@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "SourceSansPro";
+    src:
+        url("../fonts/SourceSansPro-Bold.ttf") format("truetype"),
+        url("../fonts/SourceSansPro-Light.ttf") format("truetype"),
+        url("../fonts/SourceSansPro-Regular.ttf") format("truetype")
+}
+
+// Fonts
+$text-font-family: 'Source Sans Pro', sans-serif;
+$heading-font-family: 'Source Sans Pro', sans-serif;
+$code-font-family: 'Source Sans Pro', sans-serif;
+
+// Colors
+$dark: #111;
+$gray: #1c1c1c;
+$green: #2DD8A3;
+$white: #E6EAED;
+
+*   {
+    --green: #2DD8A3; //for highlight links in the nav
+    }

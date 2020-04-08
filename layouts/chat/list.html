@@ -1,0 +1,31 @@
+{{ partial "head.html" . }}
+
+<style>
+  #chatLink{
+    color: var(--green);
+  }
+</style>
+
+{{ partial "header.html" . }}
+
+<section id="chat" class="centered chat section">
+  <div class="container">
+    <h2>Chat</h2>
+      <div class="chat-info-container">
+        <h3 style="font-weight: 600;">
+          Web interface and Sign Up:
+        </h3>
+        <h3>
+          Use <a href="https://chat.planetdecred.org/" target="_blank">chat.planetdecred.org</a>. For development, please use the same name you use on github.</p>
+        </h3>
+        <h3 style="font-weight: 600;">
+          Mobile apps:          
+        </h3>
+        <h3>
+          <a href="https://play.google.com/store/apps/details?id=im.vector.riotx" target="_blank">Android chat</a> and <a href="https://apps.apple.com/us/app/vector-im/id1083446067" target="_blank">iOS chat</a> can be configured with the <strong>matrix.planetdecred.org</strong> </a> home server.
+        </h3>
+      </div>
+  </div>
+</section>
+
+{{ partial "scripts.html" .}}

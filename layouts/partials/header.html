@@ -1,0 +1,27 @@
+<nav class="navigation">
+
+    <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}" target="_self">
+      <img src="{{ "../images/favicon-16x16.png" | absURL }}">
+    </a>
+
+    <div id="hamburguerMenu" class="hamburguerMenu">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    
+    <ul id="navigation-list" class="navigation-list">
+          <li>
+
+            <a id="aboutLink" href='{{ "about" | relLangURL }}'>About</a>
+            <a id="downloadsLink" href='{{ "downloads" | relLangURL }}'>Downloads</a>
+            <a id="chatLink" href='{{ "chat" | relLangURL }}'>Chat</a>
+            <a href='https://blog.planetdecred.org' target="_blank">Blog</a>
+            <a href='https://explorer.planetdecred.org/' target="_blank">Explorer</a>
+            <a href='https://twitter.com/planetdecred' target="_blank">Twitter</a>
+            <a href='https://github.com/planetdecred' target="_blank">GitHub</a>
+
+          </li>
+    </ul>
+    
+</nav>
