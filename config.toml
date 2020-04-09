@@ -1,38 +1,18 @@
-baseurl = "https://planetdecred.org/"
+baseurl = "./"
 title = "Planet Decred"
-
-theme = "planetdecred-theme"
-
-languagecode = "en"
-defaultcontentlanguage = "en"
-
-
-
+languageCode = "en-us"
 
 [params]
 
-    keywords = "developer,opensource"    
-    footercontent = ""
-    description = "Planet Decred Website"
-
+    favicon = "../images/favicon-32x32.png"
     main = "Planet Decred"
     info = "a community ecosystem of builders for the Decred blockchain."
-    about =  "A community-managed open source project building infrastructure for the Decred blockchain."
 
-    chatTitle = "Chat"
-
-    dateformat = "January 2, 2006"
-
-    hideCredits = true
-    hideCopyright = true
-    since = 2019
-
-    rtl = false
 
 [menu]
+
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 1
-

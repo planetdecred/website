@@ -1,0 +1,172 @@
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: $white;
+  background: $green;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+  color: $dark;
+  background-color: $dark;
+	font-family: $text-font-family;
+	font-size: 1.6em;
+  font-weight: 300;
+  margin: 0;
+  @media only screen and (max-width : 768px) {
+    font-size: 1.6em;
+  }
+}
+
+a {
+  font-weight: 300;
+  color: $green;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: $text-font-family;
+  color: $white;
+  margin: 5px 0px;
+  line-height: 3.6rem;
+}
+
+p {
+  font-size: 2rem;
+  color: $dark;
+  font-weight: 200;
+}
+
+
+h1 {
+  font-size: 7rem;
+  @media only screen and (max-width : 768px) {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 4.3rem;
+  padding-top: 20px;
+  @media only screen and (max-width : 768px) {
+    font-size: 3rem;
+  }
+}
+h3 {
+  margin-top: 4px;
+  margin-bottom: 3rem;
+  font-size: 2.6rem;
+
+
+  @media only screen and (max-width : 768px) {
+    font-size: 2.2rem;
+  }
+}
+h4 {
+  font-size: 3rem;
+  @media only screen and (max-width : 768px) {
+    font-size: 2.0rem;
+  }
+}
+h5 {
+  font-weight: 300;
+  font-size: 2.8;
+  @media only screen and (max-width : 768px) {
+    font-size: 1.8rem;
+  }
+}
+h6 {
+  font-size: 2rem;
+  @media only screen and (max-width : 768px) {
+    font-size: 1.6rem;
+  }
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+  padding-left: 1.0rem;
+  padding-right: 1.0rem;
+}
+
+img,
+p,
+a,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5{
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode:    both;
+  animation-fill-mode:            both;
+  -webkit-animation-name: fadeInDown;
+  animation-name:         fadeInDown;
+}
+
+
+
+@-webkit-keyframes fadeInDown {
+  from {
+      opacity: 0;
+      -webkit-transform:  translateY(-20px);
+      transform:          translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      -webkit-transform:  translateY(0);
+      transform:          translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      -webkit-transform:  translateY(-20px);
+      transform:          translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      -webkit-transform:  translateY(0);
+      transform:          translateY(0);
+  }
+}

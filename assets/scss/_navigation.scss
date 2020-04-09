@@ -1,0 +1,101 @@
+.navigation{
+  align-items: center;
+  background: $gray;
+  display: flex;
+  height: 60px;
+  justify-content: space-between ;
+  margin: 0;
+  position: fixed;
+  padding: 0 50px;
+  width: 100%;
+  z-index: 100;
+  a, span {
+    display: inline;
+    font-size: 1.8rem;
+    font-family: $heading-font-family;
+    font-weight: 400;
+    line-height: 6.0rem;
+    color: $white;
+  }
+  a {
+    &:hover{
+      color: $green;
+      text-decoration: none;
+    }
+    &:focus {
+      text-decoration: none;
+    }
+  }
+  .navigation-title{
+    display: grid;
+    align-items: center;
+    img{
+      margin: 0;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .navigation-list{
+    display: flex;
+    li{
+      list-style: none;
+      a{
+        margin: 0px 10px;
+        color: $white;
+        font-size: 18px;
+        text-decoration: none;
+        &:hover{
+          color: $green;
+        }
+        @media only screen and (max-width : 768px) {
+          display: block;
+          font-size: 18px;
+          font-weight: 400;
+          margin: 0 10px;
+        }
+      }
+    }
+    @media only screen and (max-width : 768px) {
+      background-color: $gray;
+      border-bottom: solid 1px $white;
+      display: none;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      padding-top: 60px;
+      position: fixed;
+      text-align: center;
+      top: 0px;
+      transition: opacity 0.250s;
+      right: 0;
+      width: 50%;
+      z-index: 5;
+    }
+  }
+  .navigation-list.active{
+    display: block;
+  }
+  .hamburguerMenu{
+    cursor: pointer;
+    display: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 50px;
+    position: absolute;
+    right: 0;
+    width: 25px;
+    z-index: 1000000;
+    &:active, .line1, &:active .line2, &:active .line3{
+      background: $green;
+    }
+    @media only screen and (max-width : 768px) {
+      display: block;
+    }
+    .line1, .line2, .line3{
+      border-radius: 5px;
+      background: $white;
+      height: 3px;
+      margin: 5px auto;
+      width: 90%;
+    }
+  }
+}
