@@ -47,7 +47,10 @@
         &:hover{
           color: $green;
         }
-        @media only screen and (max-width : 768px) {
+        &:active, &:focus{
+          color: $white;
+        }
+        @media only screen and (max-width : 1366px) {
           display: block;
           font-size: 18px;
           font-weight: 400;
@@ -55,7 +58,7 @@
         }
       }
     }
-    @media only screen and (max-width : 768px) {
+    @media only screen and (max-width : 1366px) {
       background-color: $gray;
       border-bottom: solid 1px $white;
       display: none;
@@ -87,7 +90,7 @@
     &:active, .line1, &:active .line2, &:active .line3{
       background: $green;
     }
-    @media only screen and (max-width : 768px) {
+    @media only screen and (max-width : 1366px) {
       display: block;
     }
     .line1, .line2, .line3{
