@@ -81,6 +81,7 @@
     display: grid;
     align-items: center;
     justify-items: center;
+    margin-bottom: 100px;
   
     h2{
       border-bottom: 1px solid $green;
@@ -120,4 +121,9 @@
   h3{
     font-weight: 300;
   }
+}
+
+.add-margin {
+  margin-right: 5px;
+  margin-left: 5px;
 }
